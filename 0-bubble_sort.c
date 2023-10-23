@@ -22,11 +22,11 @@ void swap_ints(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
+	int swapped = 1;
+	int i = 0;
+
 	if (array == NULL || size < 2)
 		return;
-
-	int swapped = 0;
-	int i = 0;
 
 	while (swapped)
 	{
