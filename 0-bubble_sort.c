@@ -23,7 +23,7 @@ void swap_ints(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i = 0;
+	size_t i, j = 0;
 	bool swapped = true;
 
 	if (array == NULL || size < 2)
@@ -41,6 +41,6 @@ void bubble_sort(int *array, size_t size)
 				swapped = true;
 			}
 		}
-		i++;
+		j++;
 	}
 }
