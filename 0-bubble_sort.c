@@ -26,21 +26,21 @@ void bubble_sort(int *array, size_t size)
 	size_t i, j = 0;
 	bool swapped = true;
 
-	if (array == NULL || size < 2)
-		return;
-
-	while (swapped)
+	if (array != NULL || size >= 2)
 	{
-		swapped = false;
-		for (i = 0; i < size - 1; i++)
+		while (swapped)
 		{
-			if (array[i] > array[i + 1])
+			swapped = false;
+			for (i = 0; i < size - 1; i++)
 			{
-				swap_ints(array + i, array + i + 1);
-				print_array(array, size);
-				swapped = true;
+				if (array[i] > array[i + 1])
+				{
+					swap_ints(array + i, array + i + 1);
+					print_array(array, size);
+					swapped = true;
+				}
 			}
+			j++;
 		}
-		j++;
 	}
 }
