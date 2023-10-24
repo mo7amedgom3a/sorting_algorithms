@@ -30,7 +30,6 @@ void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
  */
 void insertion_sort_list(listint_t **list)
 {
-	int key;
 	listint_t *i, *j, *tmp;
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
